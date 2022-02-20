@@ -5,7 +5,6 @@ const drawPointsElement = document.getElementById("drawPoints");
 const strokeColorElement = document.getElementById("strokeColor");
 const animateMultiplierButton = document.getElementById("animateMultiplier");
 const animateModulusButton = document.getElementById("animateModulus");
-const animateColorButton = document.getElementById("animateColor");
 const multplierMinimumElement = document.getElementById("multiplierMin");
 const multplierMaximumElement = document.getElementById("multiplierMax");
 const multplierStepElement = document.getElementById("multiplierStep");
