@@ -95,11 +95,6 @@ animateModulusButton.onclick = function()
 	animateModulus = !animateModulus;
 };
 
-animateColorButton.onclick = function()
-{
-	animateColor = !animateColor;
-};
-
 function DrawCircle(x, y, r, thickness, stroke, fill)
 {
 	gc.lineWidth = thickness * Math.min(canvasHeight, canvasWidth);
