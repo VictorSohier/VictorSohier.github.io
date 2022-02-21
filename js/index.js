@@ -23,12 +23,12 @@ const canvasHeight = canvas.height;
 
 const colors = [
 	"#FF0000",
-	"#FF0000",
 	"#00FF00",
 	"#0000FF",
 	"#00FFFF",
 	"#FFFF00",
-	"#FF00FF"
+	"#FF00FF",
+	"#000000"
 ];
 
 let multiplier = parseFloat(multiplierElement.value);
@@ -223,6 +223,7 @@ function DrawCardiod()
 	}
 	let numbers = [];
 	let c = 0;
+	let loopCount = 0;
 	for (let i = 0; i < modulus; i++)
 	{
 		let tmp = i;
@@ -287,7 +288,10 @@ function DrawCardiod()
 			}
 			tmp = (tmp * multiplier) % modulus;
 			if (numbers.includes(tmp))
-				c++;
+			{
+				c = (c + 1) % colors.length;
+				loopCount++;
+			}
 		}
 	}
 	DrawCircle(0.5, 0.5, 0.4, 0.01, "#000000");
@@ -299,6 +303,7 @@ function DrawCardiod()
 			DrawCircle((Math.sin(angle) * 0.4) + 0.5, (Math.cos(angle) * 0.4) + 0.5, 0.02, 0.01, "#000000", "#FFFFFF");
 		}
 	}
+	document.getElementsByClassName("loopTarget")[0].innerHTML = loopCount - 1;
 }
 
 let raf;
