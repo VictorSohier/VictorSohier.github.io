@@ -8,15 +8,15 @@
 				<canvas id="canvas" width="4096" height="4096"></canvas>
 			</div>
 			<div>
-				<label>multiplier</label>
-				<input id="multiplier" name="multiplier" type="number" step="1" value="2"/>
+				<label>Multiplier</label>
+				<input id="multiplier" type="number" step="1" value="2"/>
 			</div>
 			<div>
-				<label>modulus</label>
-				<input id="modulus" name="modulus" type="number" step="1" value="10"/>
+				<label>Modulus</label>
+				<input id="modulus" type="number" step="1" value="10"/>
 			</div>
 			<div>
-				<label>draw points</label>
+				<label>Draw Points</label>
 				<input id="drawPoints" type="checkbox" checked/>
 			</div>
 			<div>
@@ -26,20 +26,32 @@
 			<div>
 				<button id="animateMultiplier">Animate Multiplier</button>
 				<label>Min:</label>
-				<input id="multiplierMin" name="multiplierMin" type="number" value="2"/>
+				<input id="multiplierMin" type="number" value="2"/>
 				<label>Max:</label>
-				<input id="multiplierMax" name="multiplierMax" type="number" value="10000"/>
+				<input id="multiplierMax" type="number" value="10000"/>
 				<label>Step:</label>
-				<input id="multiplierStep" name="multiplierStep" type="number" value="1"/>
+				<input id="multiplierStep" type="number" value="1"/>
 			</div>
 			<div>
 				<button id="animateModulus">Animate Modulus</button>
 				<label>Min:</label>
-				<input id="modulusMin" name="modulusMin" type="number" value="10"/>
+				<input id="modulusMin" type="number" value="10"/>
 				<label>Max:</label>
-				<input id="modulusMax" name="modulusMax" type="number" value="1000"/>
+				<input id="modulusMax" type="number" value="1000"/>
 				<label>Step:</label>
-				<input id="modulusStep" name="modulusStep" type="number" value="1"/>
+				<input id="modulusStep" type="number" value="1"/>
+			</div>
+			<div>
+				<label>Draw Arrows:</label>
+				<input id="drawArrows" type="checkbox"/>
+			</div>
+			<div>
+				<label>Loop Colors:</label>
+				<input id="loopColors" type="checkbox"/>
+			</div>
+			<div>
+				<label>Shade By Length:</label>
+				<input id="lengthShading" type="checkbox"/>
 			</div>
 		</div>
 		<script src="js/index.js" lang="js"></script>
